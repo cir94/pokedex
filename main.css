@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Open+Sans+Condensed:300|Roboto+Mono&display=swap');
+
+body {
+    font-family: 'Open Sans Condensed', 'Roboto-Mono', 'Bebas Neue';
+    background-color: #1d1d1d;
+}
+
+/* Name Entry Box */
+
+#charPortrait {
+    display: grid;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0%;
+    justify-items: center;
+    grid-template: repeat(1, 690px) / repeat(1, 220px);
+    background-color: #1d1d1d;
+
+}
+
+
+/* Pokedex grid Styling */
+
+#pokedexWindow {
+    display: grid;
+    position: absolute;
+    margin: auto;
+    justify-items: center;
+    grid-template: repeat(3, 114px) / repeat(6, 140px);
+    /* grid-template-areas: "searchBar pokeStats...."; */
+    background-color: #41414110;
+    left: 21.5%;
+    top: 350px;
+}
+
+#pokedexWindow form {
+    grid-row-start: 3;
+    padding-left: 15px;
+    padding-top: 64px;
+}
+
+#pokedexWindow ul {
+    position: absolute;
+    left: 1%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    list-style: none;   
+}
+
+#pokedexWindow h1 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 149%;
+    width: 130%;
+    font-family: 'Roboto Mono';
+    font-size: 25px;
+    grid-column-start: 1;
+}
+
+#pokedexWindow img {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 77%;
+    width: 200px;
+}
+/* Pokemon Sprite grid Styling */
+
+#pokeSprite {
+    display: grid;
+    position: absolute;
+    margin: auto;
+    justify-items: center;
+    grid-template: repeat(1, 200px) / repeat(3, 250px);
+    background-color: #41414110;
+    left: 24.5%;
+    top: 7.5%;
+    cursor: pointer;
+}
+

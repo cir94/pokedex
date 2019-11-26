@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PokeAPI</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div id='charPortrait'>
+        <img src='img/kiritest2.png'>
+    </div>
+
+    <div id='pokedexWindow'>
+
+        <!-- button onclick delivers input value to JS -->
+
+        <form>
+            <input id='poke-input' type='text' placeholder="Search by ID"></input>
+            <button type='button' onclick='pokemonAPI(document.getElementById("poke-input").value)'>Search</button>
+        </form>
+
+        <h1 id=pokeName></h1>
+
+        <ul id='stats'>
+            <li id='HP'>HP: </li>
+            <li id='Atk'>Attack: </li>
+            <li id='Def'>Defense: </li>
+            <li id='sDef'>S.Defense: </li>
+            <li id='sAtk'>S.Attack: </li>
+            <li id='Spd'>Speed: </li>
+            <li id='Abilities'>Abilities: </li>
+        </ul>
+
+
+        <div id=pokedexSprite>
+            
+            
+        </div>
+
+    </div>
+
+    <div id='pokeSprite'>
+            <img src='img/700.png' onclick='pokemonAPI(700)' width="200px">
+            <img src='img/648.png' onclick='pokemonAPI(648)' width="200px">
+            <img src='img/303.png' onclick='pokemonAPI(303)' width="200px">
+    </div>
+
+    <script src="pokeAPIcall.js"></script>
+    <script src="pokemon.js"></script>
+
+</body>
+</html>
